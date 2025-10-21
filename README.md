@@ -3,13 +3,7 @@ AI-powered carbon credit verification platform helping communities earn and comp
 
 # Welcome to our project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/fa2aa13c-3294-457a-95cb-823c328d0541
-
-## How can I edit this code?
-
-There are several ways of editing your application.
 
 **Use your preferred IDE**
 
