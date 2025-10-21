@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "tree_count": 30,
+    "height_meters": 11.2,
+    "area_hectares": 20.5,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 11305.8
+  },
+  {
+    "id": 2,
+    "tree_count": 1,
+    "height_meters": 8.3,
+    "area_hectares": 0.3,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 165.33
+  },
+  {
+    "id": 3,
+    "tree_count": 3,
+    "height_meters": 9.1,
+    "area_hectares": 1.5,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 826.65
+  },
+  {
+    "id": 4,
+    "tree_count": 25,
+    "height_meters": 10.5,
+    "area_hectares": 15.2,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 8379.9
+  },
+  {
+    "id": 5,
+    "tree_count": 3,
+    "height_meters": 10.2,
+    "area_hectares": 2.1,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 1157.31
+  },
+  {
+    "id": 6,
+    "tree_count": 1,
+    "height_meters": 12.4,
+    "area_hectares": 0.5,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 275.55
+  },
+  {
+    "id": 7,
+    "tree_count": 20,
+    "height_meters": 9.3,
+    "area_hectares": 12.8,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 7056.96
+  },
+  {
+    "id": 8,
+    "tree_count": 1,
+    "height_meters": 13.1,
+    "area_hectares": 0.8,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 440.88
+  },
+  {
+    "id": 9,
+    "tree_count": 1,
+    "height_meters": 13.1,
+    "area_hectares": 0.8,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 440.88
+  },
+  {
+    "id": 10,
+    "tree_count": 35,
+    "height_meters": 11.5,
+    "area_hectares": 22.3,
+    "land_cover_class": "mangrove",
+    "carbon_density": 150,
+    "co2_equivalent_tons": 12297.45
+  }
+]

@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CarbonVerify Design System - All colors, gradients, fonts, etc defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* CarbonVerify Brand Colors - Custom palette */
+    --brand-primary: 157 25% 20%;     /* #293f33 - Primary green */
+    --brand-secondary: 48 21% 91%;    /* #efeae1 - Secondary cream */
+    
+    /* Core Design System */
+    --background: 48 21% 91%;         /* Secondary cream background */
+    --foreground: 157 25% 20%;        /* Primary green text */
+
+    --card: 0 0% 100%;                /* White cards */
+    --card-foreground: 157 25% 20%;   /* Primary green card text */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 157 25% 20%;
+
+    --primary: 157 25% 20%;           /* Primary green */
+    --primary-foreground: 48 21% 91%; /* Secondary cream on primary */
+
+    --secondary: 48 21% 91%;          /* Secondary cream */
+    --secondary-foreground: 157 25% 20%; /* Primary green on secondary */
+
+    --muted: 48 21% 85%;              /* Slightly darker secondary */
+    --muted-foreground: 157 15% 40%;   /* Muted green */
+
+    --accent: 157 30% 85%;             /* Light green accent */
+    --accent-foreground: 157 25% 20%;  /* Primary green on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 157 15% 85%;             /* Soft green borders */
+    --input: 0 0% 100%;                /* White inputs */
+    --ring: 157 25% 20%;               /* Primary green focus ring */
+    
+    --success: 120 40% 50%;            /* Success green */
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 90% 60%;             /* Warning yellow */
+    --warning-foreground: 157 25% 20%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+* {
+  @apply border-border;
+}
+
+  body {
+    @apply bg-background text-foreground font-funnel;
+  }
+}
+
+/* Custom Funnel Display Font Classes */
+@layer components {
+  .funnel-display {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .funnel-display-light { @apply funnel-display font-light; }
+  .funnel-display-normal { @apply funnel-display font-normal; }
+  .funnel-display-medium { @apply funnel-display font-medium; }
+  .funnel-display-semibold { @apply funnel-display font-semibold; }
+  .funnel-display-bold { @apply funnel-display font-bold; }
+  .funnel-display-extrabold { @apply funnel-display font-extrabold; }
+  
+  /* Hero animations */
+  .hero-fade-in {
+    animation: fade-in 0.8s ease-out;
+  }
+  
+  .hero-slide-up {
+    animation: slide-up 0.8s ease-out 0.2s both;
+  }
+  
+  .feature-card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(41, 63, 51, 0.1);
+  }
+}
+
+/* Custom Animations */
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes counter-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-counter-up {
+    animation: counter-up 0.6s ease-out;
+  }
+}

@@ -1,0 +1,22 @@
+project_id = "btoaiqpvcfvwoydfndiu"
+
+[functions.send-otp]
+verify_jwt = false
+
+[functions.password-change-otp]
+verify_jwt = false
+
+[functions.reset-password]
+verify_jwt = false
+
+[functions.verify-user]
+verify_jwt = false
+
+[functions.calculate-carbon]
+verify_jwt = true
+
+[functions.analyze-tree-image]
+verify_jwt = true
+
+[functions.upload-to-ipfs]
+verify_jwt = true
